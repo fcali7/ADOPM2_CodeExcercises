@@ -13,9 +13,11 @@ namespace _05_Wines_Interfaces
         /// Name of the wine
         /// </summary>
         public string Name { get; init; }
+
         public Country Country { get; init; }
         public WineType WineType { get; init; }
         public GrapeType GrapeType { get; init; }
+
         public decimal Price { get; init; }
 
         public IWine Seed(SeedGenerator rnd);

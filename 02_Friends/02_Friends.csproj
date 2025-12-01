@@ -10,6 +10,5 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SeedGenerator\SeedGenerator.csproj" />
-    <ProjectReference Include="..\01_Cars\01_Cars.csproj" />
   </ItemGroup>
 </Project>

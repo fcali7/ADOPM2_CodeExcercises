@@ -13,6 +13,7 @@ class Program
 
         var p2 = new Pearl(rnd);
         Console.WriteLine(p2.GetHashCode());
+        Console.WriteLine(p2);
 
         var p2_copy = new Pearl(p2);
         Console.WriteLine(p2_copy.GetHashCode());

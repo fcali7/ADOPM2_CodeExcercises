@@ -21,9 +21,9 @@ class Program
 
         for (int i = 0; i < 5; i++)
         {
-            IWine w = new WineAsClass();
-            w.Seed(rnd);
-            wineCellar.Wines.Add(w);
+            wineCellar.Wines.Add(new WineAsClass().Seed(rnd));
+            wineCellar.Wines.Add(new WineAsStruct().Seed(rnd));
+            wineCellar.Wines.Add(new WineAsRecord().Seed(rnd));
         }
         #endregion
 
