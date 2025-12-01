@@ -7,16 +7,24 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, Wines with Interface!");
 
         var rnd = new SeedGenerator();
         WineCellar wineCellar = new WineCellar("Martin's cellar");
 
         #region Add wines to the winecellar
+        for (int i = 0; i < 10; i++)
+        {
+            IWine w = new WineAsStruct();
+            w.Seed(rnd);
+            wineCellar.Wines.Add(w);
+        }
 
-        IWine w = new WineAsClass();
-        w.Seed(rnd);
-
+        for (int i = 0; i < 5; i++)
+        {
+            IWine w = new WineAsClass();
+            w.Seed(rnd);
+            wineCellar.Wines.Add(w);
+        }
         #endregion
 
         Console.WriteLine($"\nWinecellar: {wineCellar.Name}");

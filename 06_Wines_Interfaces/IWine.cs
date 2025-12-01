@@ -12,13 +12,11 @@ namespace _05_Wines_Interfaces
         /// <summary>
         /// Name of the wine
         /// </summary>
-        public string Name { get; set; }
-
-        public Country Country { get; set; }
-        public WineType WineType { get; set; }
-        public GrapeType GrapeType { get; set; }
-
-        public decimal Price { get; set; }
+        public string Name { get; init; }
+        public Country Country { get; init; }
+        public WineType WineType { get; init; }
+        public GrapeType GrapeType { get; init; }
+        public decimal Price { get; init; }
 
         public IWine Seed(SeedGenerator rnd);
     }
