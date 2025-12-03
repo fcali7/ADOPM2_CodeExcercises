@@ -14,5 +14,13 @@ public class Zoo
         }
         return sRet;
     }
+
+    public void ReseedAllAnimals(SeedGenerator seeder)
+    {
+        foreach (var animal in ListOfAnimal)
+        { 
+            animal.Seed(seeder);
+        }
+    }
 }
 
