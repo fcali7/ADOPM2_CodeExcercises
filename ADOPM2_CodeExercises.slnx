@@ -15,5 +15,6 @@
   <Project Path="12_records\12_records.csproj" />
   <Project Path="13_pattern_matching\13_pattern_matching.csproj" />
   <Project Path="14_tuples\14_tuples.csproj" />
+  <Project Path="15_polymorphism/15_polymorphism.csproj" />
   <Project Path="SeedGenerator\SeedGenerator.csproj" />
 </Solution>

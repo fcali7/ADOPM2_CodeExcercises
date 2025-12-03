@@ -2,7 +2,8 @@
 using _01a_Seeder.Models;
 using Seido.Utilities.SeedGenerator;
 
-Console.WriteLine("Hello, Cars!");
+Console.WriteLine("Hello from Martin and Cars!");
+Console.WriteLine("Hello from Martin and Cars!");
 //Create a generator, inherited from .NET Random
 
 var rnd = new SeedGenerator();
